@@ -1,0 +1,10 @@
+Primary source: /Users/silverbrick/Documents/ChatGPT/arm_eye/arm_eye项目答辩演示_精简版.pptx
+Supporting source: /Users/silverbrick/Documents/ChatGPT/arm_eye/src/main.cpp
+Supporting source: /Users/silverbrick/Documents/ChatGPT/arm_eye/src/gesture_trajectories.h
+Supporting source: /Users/silverbrick/Documents/ChatGPT/arm_eye/gesture_control/gesture_control.py
+
+The deliverable is a Chinese, slide-by-slide speaking guide for the 10-slide compact defense deck.
+Content is based on the latest deck and the user's rehearsal decisions: arm is the reliable control base;
+arm_eye adds PC-camera MediaPipe gesture recognition; G is a recorded grasp trajectory with J4 closing
+and J3 coordinated; U is J3 reverse rotation by 15 degrees; D is the reverse of U; R controls J1;
+J2 is held at 78 degrees during grasping; GPIO13 long-press resets all joints to 90 degrees.

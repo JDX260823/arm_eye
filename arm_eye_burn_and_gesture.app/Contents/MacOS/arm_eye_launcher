@@ -1,0 +1,22 @@
+#!/bin/zsh
+
+APP_DIR="${0:A:h}"
+PROJECT_DIR="$(cd "${APP_DIR}/../../.." && pwd)"
+COMMAND_FILE="${PROJECT_DIR}/arm_eye_burn_and_gesture.command"
+
+if [[ ! -x "${COMMAND_FILE}" ]]; then
+    /usr/bin/osascript -e 'display alert "arm_eye 启动失败" message "找不到 arm_eye_burn_and_gesture.command。请保持整个项目目录结构不变。"'
+    exit 1
+fi
+
+# Run the command launcher in a visible Terminal window so upload progress,
+# permission prompts, and any hardware errors remain visible to the user.
+/usr/bin/osascript - "${COMMAND_FILE}" <<'APPLESCRIPT'
+on run argv
+    set scriptPath to item 1 of argv
+    tell application "Terminal"
+        activate
+        do script "/bin/zsh " & quoted form of scriptPath
+    end tell
+end run
+APPLESCRIPT

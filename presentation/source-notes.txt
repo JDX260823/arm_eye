@@ -1,0 +1,21 @@
+This presentation uses only local project sources; no external web material was used.
+
+Primary sources:
+- /Users/silverbrick/Documents/PlatformIO/Projects/arm/src/main.cpp (read-only baseline project)
+- /Users/silverbrick/Documents/ChatGPT/arm_eye/src/main.cpp
+- /Users/silverbrick/Documents/ChatGPT/arm_eye/src/gesture_trajectories.h
+- /Users/silverbrick/Documents/ChatGPT/arm_eye/gesture_control/gesture_control.py
+- /Users/silverbrick/Documents/ChatGPT/arm_eye/gesture_control/README.md
+- /Users/silverbrick/Documents/ChatGPT/arm_eye/gesture_control/tests/test_gesture_control.py
+- /Users/silverbrick/Documents/ChatGPT/arm_eye/platformio.ini
+- /Users/silverbrick/Documents/ChatGPT/arm_eye/scripts/open_camera_after_upload.py
+
+Verified project facts used in the deck:
+- Four axes with safe ranges J1 30–150 degrees; J2/J3/J4 60–160 degrees.
+- GPIO13 teach button; long press duration 2 seconds in arm_eye.
+- Gesture confidence threshold 0.65; 4 stable frames; 10 no-hand frames send S.
+- Motion smoothing maximum 2 degrees per 20 ms loop.
+- Gesture mappings S/G/U/D/R.
+- 17 Python unit tests pass.
+- Latest reported PlatformIO build: 9.7% RAM and 22.5% Flash.
+- Recorded G trajectory is approximately 290 frames at 100 ms intervals (about 29 seconds).

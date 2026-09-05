@@ -16,6 +16,8 @@
 
 ## 在线摄像头预览
 
+在线地址：[https://jdx260823.github.io/arm_eye/](https://jdx260823.github.io/arm_eye/)
+
 仓库内置 GitHub Pages 自动发布流程。每次向 `main` 分支推送后，`web/` 目录会自动发布为 HTTPS 静态站点。首次访问时请允许浏览器使用摄像头；页面只在浏览器本地读取视频流，不会上传画面。
 
 ## 烧录后自动启动手势识别
